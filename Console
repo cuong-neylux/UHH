@@ -1,0 +1,88 @@
+2026-07-22 13:46:07 Device API logging initialized - DEVICE
+Log-dbg.js:499 2026-07-22 13:46:08.180199 [FUTURE FATAL] The registered Event Listener 'init' must not have a return value. - __renderer0---Shell-home-component 
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:08.185000 Defining the object type ('sap.m.PageAccessibleLandmarkInfo') via its string name is deprecated, since it leads to accesses to the global namespace. The object type either stems from an explicitly given 'Type' value or was inferred from the default aggregation type. Please require the respective object type module beforehand. For control development, please also refer to the runtime metadata property 'defaultClass', which allows you to specify a default aggregation class type via constructor reference. -  
+log @ Log-dbg.js:499
+15Tracking Prevention blocked access to storage for <URL>.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/utils/adapters/fiori/Component-preload.js.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/utils/adapters/fiori/Component-preload.js.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/utils/adapters/fiori/Component-preload.js.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/utils/adapters/fiori/Component-preload.js.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/utils/adapters/fiori/Component-preload.js.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/text_styles_horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/text_styles_horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/text_styles_horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/text_styles_horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/horizon.css.
+/sap/bc/ui2/flp?sap-client=800&sap-language=DE#Shell-home:1 Tracking Prevention blocked access to storage for https://xray.hana.ondemand.com/xRayControls/resources/sap/dfa/help/wpb/less/text_styles_horizon.css.
+/sap/es/ina/GetServerInfo?_=1784720769091:1  Failed to load resource: the server responded with a status of 404 (Not found)
+/sap/bc/lrep/content/~20260709150532.7324560~/apps/fin.travel.mytravelrequestsv2/appVariants/customer.TRV.MTRExtensionV2/i18n/i18n_de_DE.properties:1  Failed to load resource: the server responded with a status of 404 (Not Found)
+library.css:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+assert-dbg.js:33 Assertion failed: Property 'Label' is defined twice; Source = metadata document, Annotation Target = TRV_MTR_SRV.CostAssignment, Term = com.sap.vocabularies.UI.v1.Facets
+(anonymous) @ assert-dbg.js:33
+assert-dbg.js:33 Assertion failed: Property 'Label' is defined twice; Source = metadata document, Annotation Target = TRV_MTR_SRV.Destination, Term = com.sap.vocabularies.UI.v1.Facets
+(anonymous) @ assert-dbg.js:33
+Log-dbg.js:499 2026-07-22 13:46:11.490899 (dependency of 'sap/fin/travel/lib/reuse/model/models.js') Deprecation: Importing the type 'sap.m.DraftIndicatorState' as a pseudo module is deprecated. Please import the type from the module 'sap/m/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.491100 (dependency of 'sap/fin/travel/lib/reuse/util/MessageUtil.js') Deprecation: Importing the type 'sap.ui.core.MessageType' as a pseudo module is deprecated. Please import the type from the module 'sap/ui/core/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.491300 (dependency of 'sap/fin/travel/lib/reuse/util/MessageUtil.js') Deprecation: Importing the type 'sap.ui.core.ValueState' as a pseudo module is deprecated. Please import the type from the module 'sap/ui/core/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.491600 (dependency of 'sap/fin/travel/lib/reuse/util/FragmentHelper.js') Deprecation: Importing the type 'sap.m.DialogType' as a pseudo module is deprecated. Please import the type from the module 'sap/m/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.491699 (dependency of 'sap/fin/travel/lib/reuse/util/FragmentHelper.js') Deprecation: Importing the type 'sap.ui.core.MessageType' as a pseudo module is deprecated. Please import the type from the module 'sap/ui/core/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.492000 (dependency of 'sap/fin/travel/lib/reuse/util/ODataModelUtil.js') Deprecation: Importing the type 'sap.m.DraftIndicatorState' as a pseudo module is deprecated. Please import the type from the module 'sap/m/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.515399 [FUTURE FATAL] XMLView's root node must be 'View' or 'XMLView' and have the namespace 'sap.ui.core.mvc' (View name: fin.travel.mytravelrequestsv2.view.Main) -  
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.536300 [FUTURE FATAL] XMLView's root node must be 'View' or 'XMLView' and have the namespace 'sap.ui.core.mvc' (View name: fin.travel.mytravelrequestsv2.view.Main) -  
+log @ Log-dbg.js:499
+sap-xhrlib-esm-dbg.js:5  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+(anonymous) @ sap-xhrlib-esm-dbg.js:5
+/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/ListPage/i18n/i18n_de_DE.properties:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/ListPage/i18n/i18n_de.properties:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/ListPage/i18n/i18n_en.properties:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/ListPage/i18n/i18n.properties:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'TITLE' in bundle file(s): ''
+(anonymous) @ assert-dbg.js:33
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'DESCRIPTION' in bundle file(s): ''
+(anonymous) @ assert-dbg.js:33
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'TITLE' in bundle file(s): ''
+(anonymous) @ assert-dbg.js:33
+Log-dbg.js:499 2026-07-22 13:46:11.657600 (dependency of 'sap/fin/travel/lib/reuse/util/PersistenceHelper.js') Deprecation: Importing the type 'sap.m.DraftIndicatorState' as a pseudo module is deprecated. Please import the type from the module 'sap/m/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.715300 (dependency of 'sap/fin/travel/lib/reuse/util/EventHandler.js') Deprecation: Importing the type 'sap.m.PlacementType' as a pseudo module is deprecated. Please import the type from the module 'sap/m/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.715399 (dependency of 'sap/fin/travel/lib/reuse/util/EventHandler.js') Deprecation: Importing the type 'sap.ui.core.MessageType' as a pseudo module is deprecated. Please import the type from the module 'sap/ui/core/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+Log-dbg.js:499 2026-07-22 13:46:11.715500 (dependency of 'sap/fin/travel/lib/reuse/util/FormatHandler.js') Deprecation: Importing the type 'sap.ui.core.MessageType' as a pseudo module is deprecated. Please import the type from the module 'sap/ui/core/library'. You can then reference this type via the library's module export. For more information, see documentation under 'Best Practices for Loading Modules'. -  sap.ui.ModuleSystem
+log @ Log-dbg.js:499
+sap-xhrlib-esm-dbg.js:5  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+(anonymous) @ sap-xhrlib-esm-dbg.js:5
+sap-xhrlib-esm-dbg.js:5  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+(anonymous) @ sap-xhrlib-esm-dbg.js:5
+sap-xhrlib-esm-dbg.js:5  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+(anonymous) @ sap-xhrlib-esm-dbg.js:5
+sap-xhrlib-esm-dbg.js:5  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+(anonymous) @ sap-xhrlib-esm-dbg.js:5
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'title' in bundle file(s): ''
+(anonymous) @ assert-dbg.js:33
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'description' in bundle file(s): ''
+(anonymous) @ assert-dbg.js:33
+Log-dbg.js:499 2026-07-22 13:46:11.834800 [FUTURE FATAL] XMLView's root node must be 'View' or 'XMLView' and have the namespace 'sap.ui.core.mvc' (View name: sap.fin.travel.lib.reuse.ListPage.view.ListPage) -  
+log @ Log-dbg.js:499
+assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'Meine Reiseanträge' in bundle file(s): '/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_de_DE.properties', '/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_de.properties', '/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_en.properties', '/sap/bc/ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n.properties'
+(anonymous) @ assert-dbg.js:33
+Log-dbg.js:499 2026-07-22 13:46:11.866399 [FUTURE FATAL] XMLView's root node must be 'View' or 'XMLView' and have the namespace 'sap.ui.core.mvc' (View name: sap.fin.travel.lib.reuse.ListPage.view.ListPage) -  
+log @ Log-dbg.js:499
+assert-dbg.js:33 Assertion failed: [FUTURE FATAL] Element sap.ui.core.mvc.XMLView#listPageView: encountered unknown setting 'useVariantManagement' for class sap.ui.comp.smartfilterbar.SmartFilterBar (value:'true')
+(anonymous) @ assert-dbg.js:33
+2assert-dbg.js:33 Assertion failed: could not find any translatable text for key 'AA_STANDARD' in bundle file(s): '../ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_de_DE.properties', '../ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_de.properties', '../ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n_en.properties', '../ui5_ui5/sap/fin_trv_reuse/~4AA1B11447BC7E4A3229F7880CB5AB7A~5/i18n/i18n.properties'
+(anonymous) @ assert-dbg.js:33
+[NEW] Explain Console errors by using Copilot in Edge: click  to explain an error. Learn moreDon't show again
+library.css:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
