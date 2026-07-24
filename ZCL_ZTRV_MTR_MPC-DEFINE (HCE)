@@ -1,0 +1,128 @@
+  method DEFINE.
+*&---------------------------------------------------------------------*
+*&           Generated code for the MODEL PROVIDER BASE CLASS          &*
+*&                                                                     &*
+*&  !!!NEVER MODIFY THIS CLASS. IN CASE YOU WANT TO CHANGE THE MODEL   &*
+*&        DO THIS IN THE MODEL PROVIDER SUBCLASS!!!                    &*
+*&                                                                     &*
+*&---------------------------------------------------------------------*
+
+
+data:
+  lo_entity_type    type ref to /iwbep/if_mgw_odata_entity_typ, "#EC NEEDED
+  lo_complex_type   type ref to /iwbep/if_mgw_odata_cmplx_type, "#EC NEEDED
+  lo_property       type ref to /iwbep/if_mgw_odata_property, "#EC NEEDED
+  lo_association    type ref to /iwbep/if_mgw_odata_assoc,  "#EC NEEDED
+  lo_assoc_set      type ref to /iwbep/if_mgw_odata_assoc_set, "#EC NEEDED
+  lo_ref_constraint type ref to /iwbep/if_mgw_odata_ref_constr, "#EC NEEDED
+  lo_nav_property   type ref to /iwbep/if_mgw_odata_nav_prop, "#EC NEEDED
+  lo_action         type ref to /iwbep/if_mgw_odata_action, "#EC NEEDED
+  lo_parameter      type ref to /iwbep/if_mgw_odata_property, "#EC NEEDED
+  lo_entity_set     type ref to /iwbep/if_mgw_odata_entity_set, "#EC NEEDED
+  lo_complex_prop   type ref to /iwbep/if_mgw_odata_cmplx_prop. "#EC NEEDED
+
+* Extend the model
+model->extend_model( iv_model_name = 'TRV_MTR_MDL' iv_model_version = '0001' ). "#EC NOTEXT
+
+model->set_schema_namespace( 'TRV_MTR_SRV' ).
+
+
+*
+* Disable all the complex types that were disabled from reference model
+*
+* Disable complex type 'Address'
+try.
+lo_complex_type = model->get_complex_type( iv_cplx_type_name = 'Address' ). "#EC NOTEXT
+lo_complex_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+if lo_complex_type is bound.
+* Disable all the properties for this complex type
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Location' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Country' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Region' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Adrnradr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Cityadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'CityDistrictadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'PostCodeadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'CityCodeadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Streetadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'HouseNumadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Countryadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Regionadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+endif.
+
+
+*Disable selected properties in a entity type
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'Currency' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'AdvNumber' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+* New artifacts have been created in the service builder after the redefinition of service
+create_new_artifacts( ).
+  endmethod.
