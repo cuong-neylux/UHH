@@ -1,0 +1,1055 @@
+  method DEFINE.
+*&---------------------------------------------------------------------*
+*&           Generated code for the MODEL PROVIDER BASE CLASS          &*
+*&                                                                     &*
+*&  !!!NEVER MODIFY THIS CLASS. IN CASE YOU WANT TO CHANGE THE MODEL   &*
+*&        DO THIS IN THE MODEL PROVIDER SUBCLASS!!!                    &*
+*&                                                                     &*
+*&---------------------------------------------------------------------*
+
+
+data:
+  lo_entity_type    type ref to /iwbep/if_mgw_odata_entity_typ, "#EC NEEDED
+  lo_complex_type   type ref to /iwbep/if_mgw_odata_cmplx_type, "#EC NEEDED
+  lo_property       type ref to /iwbep/if_mgw_odata_property, "#EC NEEDED
+  lo_association    type ref to /iwbep/if_mgw_odata_assoc,  "#EC NEEDED
+  lo_assoc_set      type ref to /iwbep/if_mgw_odata_assoc_set, "#EC NEEDED
+  lo_ref_constraint type ref to /iwbep/if_mgw_odata_ref_constr, "#EC NEEDED
+  lo_nav_property   type ref to /iwbep/if_mgw_odata_nav_prop, "#EC NEEDED
+  lo_action         type ref to /iwbep/if_mgw_odata_action, "#EC NEEDED
+  lo_parameter      type ref to /iwbep/if_mgw_odata_property, "#EC NEEDED
+  lo_entity_set     type ref to /iwbep/if_mgw_odata_entity_set, "#EC NEEDED
+  lo_complex_prop   type ref to /iwbep/if_mgw_odata_cmplx_prop. "#EC NEEDED
+
+* Extend the model
+model->extend_model( iv_model_name = 'TRV_MTR_MDL' iv_model_version = '0001' ). "#EC NOTEXT
+
+model->set_schema_namespace( 'TRV_MTR_SRV' ).
+
+
+*
+* Disable all the complex types that were disabled from reference model
+*
+* Disable complex type 'Address'
+try.
+lo_complex_type = model->get_complex_type( iv_cplx_type_name = 'Address' ). "#EC NOTEXT
+lo_complex_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+if lo_complex_type is bound.
+* Disable all the properties for this complex type
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Location' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Country' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Region' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Adrnradr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Cityadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'CityDistrictadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'PostCodeadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'CityCodeadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Streetadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'HouseNumadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Countryadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Regionadr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+endif.
+
+* Disable complex type 'SAP__FitToPage'
+try.
+lo_complex_type = model->get_complex_type( iv_cplx_type_name = 'SAP__FitToPage' ). "#EC NOTEXT
+lo_complex_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+if lo_complex_type is bound.
+* Disable all the properties for this complex type
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'ErrorRecoveryBehavior' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'IsEnabled' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'MinimumFontSize' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+endif.
+
+* Disable complex type 'SAP__HeaderFooterField'
+try.
+lo_complex_type = model->get_complex_type( iv_cplx_type_name = 'SAP__HeaderFooterField' ). "#EC NOTEXT
+lo_complex_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+if lo_complex_type is bound.
+* Disable all the properties for this complex type
+try.
+lo_property = lo_complex_type->get_property( iv_property_name = 'Type' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+endif.
+
+
+*
+* Disable all the entity types that were disabled from reference model
+*
+* Disable entity type 'SAP__Currency'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__Currency' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'CurrencyCode' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'ISOCode' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Text' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DecimalPlaces' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__UnitOfMeasure'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__UnitOfMeasure' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'UnitCode' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'ISOCode' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'ExternalCode' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Text' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DecimalPlaces' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__DocumentDescription'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__DocumentDescription' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'CreatedBy' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'CreatedAt' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'FileName' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Title' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+* Disable all the navigation properties for this entity type
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'Format' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'TableColumns' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'CoverPage' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'Signature' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'PDFStandard' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'Hierarchy' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'Header' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'Footer' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+endif.
+
+* Disable entity type 'SAP__Format'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__Format' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'FontSize' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Orientation' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'PaperSize' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'BorderSize' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'MarginSize' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'FontName' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Padding' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'FitToPage' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__PDFStandard'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__PDFStandard' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'UsePDFAConformanceVC' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'UsePDFAConformance' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DoEnableAccessibilityVC' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DoEnableAccessibility' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__TableColumns'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__TableColumns' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Name' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Header' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'HorizontalAlignment' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__CoverPage'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__CoverPage' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Title' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Name' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Value' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__Signature'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__Signature' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DoSign' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Reason' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__Hierarchy'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__Hierarchy' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DistanceFromRootElement' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DrillStateElement' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__PDFHeader'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__PDFHeader' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Right' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Left' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Center' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__PDFFooter'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__PDFFooter' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'Id' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Right' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Left' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_complex_prop = lo_entity_type->get_cmplx_type_property( iv_name = 'Center' ). "#EC NOTEXT
+lo_complex_prop->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+* Disable entity type 'SAP__ValueHelp'
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SAP__ValueHelp' ). "#EC NOTEXT
+lo_entity_type->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+IF lo_entity_type IS BOUND.
+* Disable all the properties for this entity type
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'VALUEHELP' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'FIELD_VALUE' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_property = lo_entity_type->get_property( iv_property_name = 'DESCRIPTION' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+endif.
+
+
+*Disable selected properties in a entity type
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'Currency' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'AdvNumber' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_TripActivityType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Date' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_TripActivityType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Pernr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_TripActivityType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Reinr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_StatutoryType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Date' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_StatutoryType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Pernr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_StatutoryType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Reinr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_EnterpriseSpecificType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Date' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_EnterpriseSpecificType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Pernr' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'SH_EnterpriseSpecificType' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'Tripno' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'TravelRequest' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'TravelPlan' ). "#EC NOTEXT
+lo_property    = lo_entity_type->get_property( iv_property_name = 'ResSystem' ). "#EC NOTEXT
+lo_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+*Disable selected navigation properties in a entity type
+try.
+lo_entity_type = model->get_entity_type( iv_entity_name = 'TravelRequest' ). "#EC NOTEXT
+lo_nav_property = lo_entity_type->get_navigation_property( iv_name    = 'ToDepartureWork' ). "#EC NOTEXT
+lo_nav_property->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+*
+*Disable all the entity sets that were disabled from reference model
+*
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__Currencies' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__UnitsOfMeasure' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__MyDocumentDescriptions' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__FormatSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__PDFStandardSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__TableColumnsSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__CoverPageSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__SignatureSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__HierarchySet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__PDFHeaderSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__PDFFooterSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_entity_set = model->get_entity_set( iv_entity_set_name = 'SAP__ValueHelpSet' ). "#EC NOTEXT
+IF lo_entity_set IS BOUND.
+lo_entity_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+*
+*Disable all the associations, association sets that were disabled from reference model
+*
+try.
+lo_association = model->get_association( iv_association_name = 'TravelRequest_DepartureWork' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_format' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_tablecolumns' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_coverpage' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_signature' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_pdfstandard' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_Hierarchy' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_header' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_association = model->get_association( iv_association_name = 'to_Footer' ). "#EC NOTEXT
+lo_association->set_disabled( iv_disabled = abap_true ).
+lo_ref_constraint = lo_association->get_ref_constraint( ).
+lo_ref_constraint->set_disabled( iv_disabled = abap_true ).
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+
+
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'TravelRequest_DepartureWorkSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_formatSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_tablecolumnsSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_coverpageSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_signatureSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_pdfstandardSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_HierarchySet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_headerSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+try.
+lo_assoc_set  = model->get_association_set( iv_assoc_set_name = 'to_FooterSet' ). "#EC NOTEXT
+IF lo_assoc_set IS BOUND.
+lo_assoc_set->set_disabled( iv_disabled = abap_true ).
+ENDIF.
+CATCH /iwbep/cx_mgw_med_exception.
+*  No Action was taken as the OData Element is not a part of redefined service
+ENDTRY.
+* New artifacts have been created in the service builder after the redefinition of service
+create_new_artifacts( ).
+* Labels of the artifacts have been changed in the service builder after the redefinition of service
+change_labels( ).
+  endmethod.
