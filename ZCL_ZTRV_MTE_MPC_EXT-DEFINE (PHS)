@@ -28,7 +28,7 @@
   CATCH /iwbep/cx_mgw_med_exception.
   ENDTRY.
 
-  lo_entity_type = model->create_entity_type( iv_entity_type_name = 'TravelExpense' iv_def_entity_set = abap_false ). "#EC NOTEXT
+  lo_entity_type = model->get_entity_type( iv_entity_name = 'TravelExpense' ). "#EC NOTEXT
 
 ***********************************************************************************************************************************
 *Properties
