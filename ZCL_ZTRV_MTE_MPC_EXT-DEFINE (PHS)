@@ -34,80 +34,335 @@
 *Properties
 ***********************************************************************************************************************************
 
+  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
   lo_property = lo_entity_type->get_property( iv_property_name = 'AbroadLanding' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'ReasonText' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'ActNights' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'Adrnradr' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'Approverid' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'Approvername' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'AppvlStatus' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'AppvlStatusName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
   lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWork' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'AssoSuSepAllo' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Attachmenteditable' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Bordercrossing' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CarriedByOth' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CarryOth' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Cityadr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CityCodeadr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CityDistrictadr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Country' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Countryadr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CountryGrp' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CountryGrpName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CountryRegionName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityAdditionalDest' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityAdvances' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityGeneralInfo' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
-  lo_property = lo_entity_type->get_property( iv_property_name = 'ArrivalWorkName' ). "#EC NOTEXT
-  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ).  "#EC NOTEXT
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityMileages' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityReceipts' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'CriticalityTripCostAssignmnt' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Customer' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Dateape' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datearr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datecha' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datecow' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datedep' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datedpe' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Dateeow' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datefar' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Datefdp' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Dateout' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Dateret' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Dateset' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DatReduc1' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DatReduc2' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Deletable' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DepartureWork' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DepartureWorkName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DeptOfReimb' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DetailedAddresses' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Detailedmileageaddress' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DiffEndAllw' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DiffExpPlan' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DiffExpReq' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DisplayMode' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DmeStatus' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DmeStatusName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DomesticInternational' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DraftLinkType' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DraftLinkVisible' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DraftUserId' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DrDistToWorkp' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DrNoOARTrip' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DrNoOORTrip' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DurationTripBreaks' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'DzLimit180' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Edi' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Editable' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Editor' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'EditVisible' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'EstCostPlan' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'EstCostReq' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'EstimatedCost' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'EstimatedCostCurr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'ExchangeDate' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'ThirdPartyPaym' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timeape' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timearr' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timecha' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timecow' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timedep' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timedpe' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timeeow' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timefar' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timefdp' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timeout' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timeret' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Timeset' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Tlock' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TpVariant' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TpVariantName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Travelername' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TravelPlan' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TravelPlanName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripBreak' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripBreakCountry' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripChange' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripEnd' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Tripno' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripStart' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Tripstopover' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TripTotal' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TSchema' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TSchemaName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TtComsp' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TtComspName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TtStatu' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'TtStatuName' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'Uname' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'VehClas' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
+
+  lo_property = lo_entity_type->get_property( iv_property_name = 'VehType' ). "#EC NOTEXT
+  lo_property->set_label_from_text_element( iv_text_element_symbol = '005' iv_text_element_container = 'ZCL_ZTRV_MTE_MPC_EXT' ). "#EC NOTEXT
 
 *}   INSERT
 
