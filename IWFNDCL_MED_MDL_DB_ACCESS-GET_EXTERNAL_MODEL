@@ -1,4 +1,6 @@
+ENHANCEMENT 1  ZFI_TV_GET_EXTERNAL_MODEL.    "active version
 * Set the HAS_VOCAN_TEXT to true
-  IF iv_model_identifier CS 'TRV_MTR_MDL' OR iv_model_identifier CS 'TRV_MTE_MDL'.
+  IF iv_model_identifier CS 'ZTRV_MTR_MDL' OR iv_model_identifier CS 'ZTRV_MTE_MDL'.
     es_vocan_model-header-has_vocan_texts = 'X'.
   ENDIF.
+ENDENHANCEMENT.
