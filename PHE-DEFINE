@@ -1,0 +1,45 @@
+  " SAP__Currency wieder aktivieren, da für Currency-Customizing (sap:unit) benötigt
+  DATA: lo_property       TYPE REF TO /iwbep/if_mgw_odata_property.
+  DATA: lo_entity_type TYPE REF TO /iwbep/if_mgw_odata_entity_typ.
+
+  TRY.
+    model->get_entity_type( iv_entity_name = 'SAP__Currency' ). "#EC NOTEXT
+  CATCH /iwbep/cx_mgw_med_exception.
+
+    lo_entity_type = model->create_entity_type( 'SAP__Currency' ). "#EC NOTEXT
+
+    " CurrencyCode (Key)
+    lo_property = lo_entity_type->create_property( iv_property_name = 'CurrencyCode' ). "#EC NOTEXT
+    lo_property->set_type_edm_string( ).
+    lo_property->set_is_key( ).
+    lo_property->set_maxlength( iv_max_length = 5 ).
+    lo_property->set_nullable( abap_false ).
+    lo_property->set_semantic( iv_semantic = 'currency-code' ). "#EC NOTEXT
+    lo_property->set_internal_type( 'C' ).
+    lo_property->set_internal_length( 5 ).
+
+    " ISOCode
+    lo_property = lo_entity_type->create_property( iv_property_name = 'ISOCode' ). "#EC NOTEXT
+    lo_property->set_type_edm_string( ).
+    lo_property->set_maxlength( iv_max_length = 3 ).
+    lo_property->set_nullable( abap_false ).
+    lo_property->set_internal_type( 'C' ).
+    lo_property->set_internal_length( 3 ).
+
+    " Text
+    lo_property = lo_entity_type->create_property( iv_property_name = 'Text' ). "#EC NOTEXT
+    lo_property->set_type_edm_string( ).
+    lo_property->set_maxlength( iv_max_length = 15 ).
+    lo_property->set_nullable( abap_false ).
+    lo_property->set_internal_type( 'C' ).
+    lo_property->set_internal_length( 15 ).
+
+    " DecimalPlaces
+    lo_property = lo_entity_type->create_property( iv_property_name = 'DecimalPlaces' ). "#EC NOTEXT
+    lo_property->set_type_edm_byte( ).
+    lo_property->set_nullable( abap_false ).
+    lo_property->set_internal_type( 'X' ).
+    lo_property->set_internal_length( 1 ).
+
+    " EntitySet anlegen
+    lo_entity_type->create_entity_set( 'SAP__Currencies' ). "#EC NOTEXT
