@@ -1,0 +1,261 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<app:service xmlns:app="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" xml:lang="en" xml:base="https://sapphe.fhhnet.stadt.hamburg.de/sap/opu/odata/sap/ZTRV_MTR_SRV/">
+<app:workspace>
+<atom:title type="text">Data</atom:title>
+<app:collection sap:content-version="1" href="SAP__Currencies">
+<atom:title type="text">SAP__Currencies</atom:title>
+<sap:member-title>SAP__Currency</sap:member-title>
+</app:collection>
+<app:collection sap:content-version="1" href="SAP__UnitsOfMeasure">
+<atom:title type="text">SAP__UnitsOfMeasure</atom:title>
+<sap:member-title>SAP__UnitOfMeasure</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="ZBahnCards">
+<atom:title type="text">ZBahnCards</atom:title>
+<sap:member-title>ZBahnCard</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_ZZAPPROVER">
+<atom:title type="text">SH_ZZAPPROVER</atom:title>
+<sap:member-title>SH_ZZAPPROVER</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_ZZIBAN">
+<atom:title type="text">SH_ZZIBAN</atom:title>
+<sap:member-title>SH_ZZIBAN</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Pernrs">
+<atom:title type="text">SH_Pernrs</atom:title>
+<sap:member-title>SH_Pernr</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_SalesOrderItemDocuments">
+<atom:title type="text">SH_SalesOrderItemDocuments</atom:title>
+<sap:member-title>SH_SalesOrderItemDocument</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1" href="SH_FMAreas">
+<atom:title type="text">SH_FMAreas</atom:title>
+<sap:member-title>SH_FMArea</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_CompanyCodes">
+<atom:title type="text">SH_CompanyCodes</atom:title>
+<sap:member-title>SH_CompanyCode</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_ControllingAreas">
+<atom:title type="text">SH_ControllingAreas</atom:title>
+<sap:member-title>SH_ControllingArea</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_OrderTypes">
+<atom:title type="text">SH_OrderTypes</atom:title>
+<sap:member-title>SH_OrderType</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_LUCostCenters">
+<atom:title type="text">SH_LUCostCenters</atom:title>
+<sap:member-title>SH_LUCostCenter</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_LUOrders">
+<atom:title type="text">SH_LUOrders</atom:title>
+<sap:member-title>SH_LUOrder</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="CProjects">
+<atom:title type="text">CProjects</atom:title>
+<sap:member-title>CProject</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:requires-filter="true" sap:content-version="1" href="AccountingObjects">
+<atom:title type="text">AccountingObjects</atom:title>
+<sap:member-title>AccountingObject</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="ActivitiesPlanning">
+<atom:title type="text">ActivitiesPlanning</atom:title>
+<sap:member-title>ActivityPlanning</sap:member-title>
+</app:collection>
+<app:collection sap:pageable="false" sap:content-version="1" href="Advances">
+<atom:title type="text">Advances</atom:title>
+<sap:member-title>Advance</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="Currencies">
+<atom:title type="text">Currencies</atom:title>
+<sap:member-title>Currency</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="CompanyCodes">
+<atom:title type="text">CompanyCodes</atom:title>
+<sap:member-title>CompCode</sap:member-title>
+</app:collection>
+<app:collection sap:pageable="false" sap:content-version="1" href="Destinations">
+<atom:title type="text">Destinations</atom:title>
+<sap:member-title>Destination</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="UserProfiles">
+<atom:title type="text">UserProfiles</atom:title>
+<sap:member-title>UserProfile</sap:member-title>
+</app:collection>
+<app:collection sap:pageable="false" sap:content-version="1" href="TravelServices">
+<atom:title type="text">TravelServices</atom:title>
+<sap:member-title>TravelService</sap:member-title>
+</app:collection>
+<app:collection sap:pageable="false" sap:content-version="1" href="CostAssignments">
+<atom:title type="text">CostAssignments</atom:title>
+<sap:member-title>CostAssignment</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="Comments">
+<atom:title type="text">Comments</atom:title>
+<sap:member-title>Comment</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="Contacts">
+<atom:title type="text">Contacts</atom:title>
+<sap:member-title>Contact</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="PrintPreviews">
+<atom:title type="text">PrintPreviews</atom:title>
+<sap:member-title>PrintPreview</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_TripActivityTypes">
+<atom:title type="text">SH_TripActivityTypes</atom:title>
+<sap:member-title>SH_TripActivityType</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_StatutoryTypes">
+<atom:title type="text">SH_StatutoryTypes</atom:title>
+<sap:member-title>SH_StatutoryType</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_EnterpriseSpecificTypes">
+<atom:title type="text">SH_EnterpriseSpecificTypes</atom:title>
+<sap:member-title>SH_EnterpriseSpecificType</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_BudgetPeriods">
+<atom:title type="text">SH_BudgetPeriods</atom:title>
+<sap:member-title>SH_BudgetPeriod</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="PredefinedAddresses">
+<atom:title type="text">PredefinedAddresses</atom:title>
+<sap:member-title>PredefinedAddress</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="RecurringDestinations">
+<atom:title type="text">RecurringDestinations</atom:title>
+<sap:member-title>RecurringDestination</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="PredefinedCategories">
+<atom:title type="text">PredefinedCategories</atom:title>
+<sap:member-title>PredefinedCategory</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="DepartureWorkSet">
+<atom:title type="text">DepartureWorkSet</atom:title>
+<sap:member-title>DepartureWork</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="ArrivalWorkSet">
+<atom:title type="text">ArrivalWorkSet</atom:title>
+<sap:member-title>ArrivalWork</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1" href="Services">
+<atom:title type="text">Services</atom:title>
+<sap:member-title>Service</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_LUWBSElements">
+<atom:title type="text">SH_LUWBSElements</atom:title>
+<sap:member-title>SH_LUWBSElement</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_LUNetworks">
+<atom:title type="text">SH_LUNetworks</atom:title>
+<sap:member-title>SH_LUNetwork</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_LUSalesOrders">
+<atom:title type="text">SH_LUSalesOrders</atom:title>
+<sap:member-title>SH_LUSalesOrder</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_CostCenters">
+<atom:title type="text">SH_CostCenters</atom:title>
+<sap:member-title>SH_CostCenter</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_CostCenterNames">
+<atom:title type="text">SH_CostCenterNames</atom:title>
+<sap:member-title>SH_CostCenterName</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Orders">
+<atom:title type="text">SH_Orders</atom:title>
+<sap:member-title>SH_Order</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_WBSElements">
+<atom:title type="text">SH_WBSElements</atom:title>
+<sap:member-title>SH_WBSElement</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Activities">
+<atom:title type="text">SH_Activities</atom:title>
+<sap:member-title>SH_Activity</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Networks">
+<atom:title type="text">SH_Networks</atom:title>
+<sap:member-title>SH_Network</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_SalesOrderItems">
+<atom:title type="text">SH_SalesOrderItems</atom:title>
+<sap:member-title>SH_SalesOrderItem</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_BusinessAreas">
+<atom:title type="text">SH_BusinessAreas</atom:title>
+<sap:member-title>SH_BusinessArea</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_CountryRegions">
+<atom:title type="text">SH_CountryRegions</atom:title>
+<sap:member-title>SH_CountryRegion</sap:member-title>
+</app:collection>
+<app:collection sap:searchable="true" sap:pageable="false" sap:content-version="1" href="TravelRequests">
+<atom:title type="text">TravelRequests</atom:title>
+<sap:member-title>TravelRequest</sap:member-title>
+<atom:link href="TravelRequests/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="searchTravelRequests"/>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_FundsCenters">
+<atom:title type="text">SH_FundsCenters</atom:title>
+<sap:member-title>SH_FundsCenter</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_CommitmentItems">
+<atom:title type="text">SH_CommitmentItems</atom:title>
+<sap:member-title>SH_CommitmentItem</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Funds">
+<atom:title type="text">SH_Funds</atom:title>
+<sap:member-title>SH_Fund</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_FuncAreas">
+<atom:title type="text">SH_FuncAreas</atom:title>
+<sap:member-title>SH_FuncArea</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Grants">
+<atom:title type="text">SH_Grants</atom:title>
+<sap:member-title>SH_Grant</sap:member-title>
+</app:collection>
+<app:collection sap:pageable="false" sap:content-version="1" href="Attachments">
+<atom:title type="text">Attachments</atom:title>
+<sap:member-title>Attachment</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="DocumentTypes">
+<atom:title type="text">DocumentTypes</atom:title>
+<sap:member-title>DocumentType</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="EstimatedCostCats">
+<atom:title type="text">EstimatedCostCats</atom:title>
+<sap:member-title>EstimatedCostCat</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="FIORIStatuses">
+<atom:title type="text">FIORIStatuses</atom:title>
+<sap:member-title>FIORIStatus</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Countries">
+<atom:title type="text">SH_Countries</atom:title>
+<sap:member-title>SH_Country</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_Communities">
+<atom:title type="text">SH_Communities</atom:title>
+<sap:member-title>SH_Community</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="SH_IataLocations">
+<atom:title type="text">SH_IataLocations</atom:title>
+<sap:member-title>SH_IataLocation</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="OtherServiceStatusSet">
+<atom:title type="text">OtherServiceStatusSet</atom:title>
+<sap:member-title>OtherServiceStatus</sap:member-title>
+</app:collection>
+<app:collection sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1" href="TravelPlans">
+<atom:title type="text">TravelPlans</atom:title>
+<sap:member-title>TravelPlan</sap:member-title>
+</app:collection>
+</app:workspace>
+<atom:link rel="self" href="https://sapphe.fhhnet.stadt.hamburg.de/sap/opu/odata/sap/ZTRV_MTR_SRV/"/>
+<atom:link rel="latest-version" href="https://sapphe.fhhnet.stadt.hamburg.de/sap/opu/odata/sap/ZTRV_MTR_SRV/"/>
+</app:service>
